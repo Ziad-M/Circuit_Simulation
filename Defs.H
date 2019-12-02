@@ -9,9 +9,9 @@ enum ActionType
 	ADD_Buff,			//Add 1-input Buffer gate
 	ADD_INV,			//Add 1-input Inverter gate
 	ADD_AND_GATE_2,		//Add 2-input AND gate
+	ADD_NOR_GATE_2,		//Add 2-input NOR gate
 	ADD_OR_GATE_2,		//Add 2-input OR gate
 	ADD_NAND_GATE_2,	//Add 2-input NAND gate
-	ADD_NOR_GATE_2,		//Add 2-input NOR gate
 	ADD_XOR_GATE_2,		//Add 2-input XOR gate
 	ADD_XNOR_GATE_2,	//Add 2-input XNOR gate
 	ADD_Switch,			//Add Switch
@@ -63,7 +63,9 @@ enum  MODE	//Modes of operation
 //assume fan out is 5 for now it can be read from the user or can be predefined as const
 enum FANOUT
 {
-	AND2_FANOUT = 5	//Default fan out of 2-input AND gate
+	AND2_FANOUT = 5,	//Default fan out of 2-input AND gate
+	NOR2_FANOUT = 5,
+	OR2_FANOUT  = 5,
 };
 
 

@@ -112,6 +112,24 @@
     <ClInclude Include="UI\UI.h">
       <Filter>UI</Filter>
     </ClInclude>
+    <ClInclude Include="SWITCH.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNORgate2.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="NOR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AddSwitchgate.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="OR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AddORgate2.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\AND2.cpp">
@@ -251,6 +269,24 @@
       <Filter>UI</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SWITCH.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNORgate2.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="NOR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSwitchgate.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="OR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AddORgate2.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

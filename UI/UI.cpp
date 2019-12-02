@@ -98,6 +98,7 @@ ActionType UI::GetUserAction() const
 			switch (ClickedItemOrder)
 			{
 			case ITM_AND2: return ADD_AND_GATE_2;
+			case ITM_NOR2: return ADD_NOR_GATE_2;
 			case ITM_OR2: return ADD_OR_GATE_2;
 			case ITM_EXIT: return EXIT;	
 			
@@ -164,7 +165,7 @@ void UI::ClearStatusBar()const
 	pWind->DrawRectangle(MsgX, height - MsgY, width, height);
 }
 //////////////////////////////////////////////////////////////////////////////////////////
-//Clears the drawing (degin) area
+//Clears the drawing (desgin) area
 void UI::ClearDrawingArea() const
 {
 	pWind->SetPen(RED, 1);
@@ -182,11 +183,21 @@ void UI::CreateDesignToolBar()
 
 	//First prepare List of images for each menu item
 	string MenuItemImages[ITM_DSN_CNT];
-	MenuItemImages[ITM_AND2] = "images\\Menu\\Menu_AND2.jpg";
-	MenuItemImages[ITM_OR2]  = "images\\Menu\\Menu_OR2.jpg";
-	MenuItemImages[ITM_EXIT] = "images\\Menu\\Menu_Exit.jpg";
+	MenuItemImages[ITM_AND2]     = "images\\Menu\\Menu_AND2.jpg";
+	MenuItemImages[ITM_OR2]      = "images\\Menu\\Menu_OR2.jpg";
+	MenuItemImages[ITM_EXIT]     = "images\\Menu\\Menu_Exit.jpg";
+	MenuItemImages[ITM_Switch]   = "images\\Menu\\Switch.jpg";
+	MenuItemImages[ITM_NAND2]    = "images\\Menu\\Menu_NAND2.jpg";
+	MenuItemImages[ITM_NOR2]     = "images\\Menu\\Menu_NOR2.jpg";
+	MenuItemImages[ITM_NOT]      = "images\\Menu\\Menu_NOT.jpg";
+	MenuItemImages[ITM_XOR2]     = "images\\Menu\\Menu_XOR2.jpg";
+	MenuItemImages[ITM_XNOR2]    = "images\\Menu\\Menu_XNOR2.jpg";
+	MenuItemImages[ITM_LED]      = "images\\Menu\\LED_off.jpg";
+
 
 	//TODO: Prepare image for each menu item and add it to the list
+	//DONE!
+
 
 	//Draw menu item one image at a time
 	for(int i=0; i<ITM_DSN_CNT; i++)
@@ -204,8 +215,6 @@ void UI::CreateSimulationToolBar()
 {
 	AppMode = SIMULATION;	//Simulation Mode
 
-	//TODO: Write code to draw the simualtion toolbar (similar to that of design toolbar drawing)
-
 
 }
 
@@ -213,11 +222,12 @@ void UI::CreateSimulationToolBar()
 //								Components Drawing Functions							//
 //======================================================================================//
 
+
 void UI::DrawAND2(const GraphicsInfo &r_GfxInfo, bool selected) const
 {
 	string GateImage;
 	if(selected)	//use image in the highlighted case
-		GateImage="Images\\Gates\\Gate_AND2_Hi.jpg";
+		GateImage = "Images\\Gates\\Gate_AND2_Hi.jpg";
 	else  
 		GateImage = "Images\\Gates\\Gate_AND2.jpg";
 
@@ -226,6 +236,32 @@ void UI::DrawAND2(const GraphicsInfo &r_GfxInfo, bool selected) const
 	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
 }
 
+void UI::DrawNOR2(const GraphicsInfo &r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_OR2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_OR2.jpg";
+
+	//Draw NOR Gate at Gfx_Info (2nd corner)
+	//Set the Image Width & Height by NOR Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+}
+
+void UI::DrawOR2(const GraphicsInfo &r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_OR2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_OR2.jpg";
+
+	//Draw OR Gate at Gfx_Info (2nd corner)
+	//Set the Image Width & Height by OR Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+
+}
 //TODO: Add similar functions to draw all components
 
 

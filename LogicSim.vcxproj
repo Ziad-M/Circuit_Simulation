@@ -18,13 +18,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -64,6 +64,9 @@
   <ItemGroup>
     <ClInclude Include="Actions\Action.h" />
     <ClInclude Include="Actions\AddANDgate2.h" />
+    <ClInclude Include="AddNORgate2.h" />
+    <ClInclude Include="AddORgate2.h" />
+    <ClInclude Include="AddSwitchgate.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -95,10 +98,16 @@
     <ClInclude Include="Components\OutputPin.h" />
     <ClInclude Include="Components\Pin.h" />
     <ClInclude Include="Defs.H" />
+    <ClInclude Include="NOR2.h" />
+    <ClInclude Include="OR2.h" />
+    <ClInclude Include="SWITCH.h" />
     <ClInclude Include="UI\UI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions\AddANDgate2.cpp" />
+    <ClCompile Include="AddNORgate2.cpp" />
+    <ClCompile Include="AddORgate2.cpp" />
+    <ClCompile Include="AddSwitchgate.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
     <ClCompile Include="CMUgraphicsLib\auxil.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -146,6 +155,9 @@
     <ClCompile Include="Components\OutputPin.cpp" />
     <ClCompile Include="Components\Pin.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NOR2.cpp" />
+    <ClCompile Include="OR2.cpp" />
+    <ClCompile Include="SWITCH.cpp" />
     <ClCompile Include="UI\UI.cpp" />
   </ItemGroup>
   <ItemGroup>
