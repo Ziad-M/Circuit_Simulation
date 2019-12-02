@@ -1,5 +1,5 @@
 #include "AddNORgate2.h"
-#include "/CIE Projects/CIE202 - Project Fall 2019 - student/Code Framework/ApplicationManager.h"
+#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
 
 AddNORgate2::AddNORgate2(ApplicationManager* pApp) :Action(pApp)
 {

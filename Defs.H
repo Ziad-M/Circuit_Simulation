@@ -66,6 +66,8 @@ enum FANOUT
 	AND2_FANOUT = 5,	//Default fan out of 2-input AND gate
 	NOR2_FANOUT = 5,
 	OR2_FANOUT  = 5,
+	NOT1_FANOUT = 5,
+	Switch_FANOUT = 5,
 };
 
 

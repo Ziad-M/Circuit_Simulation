@@ -1,6 +1,6 @@
 #pragma once
-#include "/CIE Projects/CIE202 - Project Fall 2019 - student/Code Framework/Actions/Action.h"
-#include "/CIE Projects/CIE202 - Project Fall 2019 - student/Code Framework/SWITCH.h"
+#include "/CIE Projects/Circuit_Simulation/Actions/Action.h"
+#include "/CIE Projects/Circuit_Simulation/SWITCH.h"
 
 
 class AddSwitchgate : public Action

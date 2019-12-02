@@ -65,6 +65,7 @@
     <ClInclude Include="Actions\Action.h" />
     <ClInclude Include="Actions\AddANDgate2.h" />
     <ClInclude Include="AddNORgate2.h" />
+    <ClInclude Include="AddNOTgate1.h" />
     <ClInclude Include="AddORgate2.h" />
     <ClInclude Include="AddSwitchgate.h" />
     <ClInclude Include="ApplicationManager.h" />
@@ -99,6 +100,7 @@
     <ClInclude Include="Components\Pin.h" />
     <ClInclude Include="Defs.H" />
     <ClInclude Include="NOR2.h" />
+    <ClInclude Include="NOT.h" />
     <ClInclude Include="OR2.h" />
     <ClInclude Include="SWITCH.h" />
     <ClInclude Include="UI\UI.h" />
@@ -106,6 +108,7 @@
   <ItemGroup>
     <ClCompile Include="Actions\AddANDgate2.cpp" />
     <ClCompile Include="AddNORgate2.cpp" />
+    <ClCompile Include="AddNOTgate1.cpp" />
     <ClCompile Include="AddORgate2.cpp" />
     <ClCompile Include="AddSwitchgate.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
@@ -156,6 +159,7 @@
     <ClCompile Include="Components\Pin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NOR2.cpp" />
+    <ClCompile Include="NOT.cpp" />
     <ClCompile Include="OR2.cpp" />
     <ClCompile Include="SWITCH.cpp" />
     <ClCompile Include="UI\UI.cpp" />

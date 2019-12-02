@@ -130,6 +130,12 @@
     <ClInclude Include="AddORgate2.h">
       <Filter>Actions</Filter>
     </ClInclude>
+    <ClInclude Include="NOT.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNOTgate1.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\AND2.cpp">
@@ -285,6 +291,12 @@
       <Filter>Components</Filter>
     </ClCompile>
     <ClCompile Include="AddORgate2.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="NOT.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNOTgate1.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
   </ItemGroup>

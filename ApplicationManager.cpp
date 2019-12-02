@@ -1,7 +1,8 @@
 #include "ApplicationManager.h"
 #include "Actions\AddANDgate2.h"
-#include "\CIE Projects\CIE202 - Project Fall 2019 - student\Code Framework\AddNORgate2.h"
-#include "\CIE Projects\CIE202 - Project Fall 2019 - student\Code Framework\AddORgate2.h"
+#include "/CIE Projects/Circuit_Simulation/AddNORgate2.h"
+#include "/CIE Projects/Circuit_Simulation/AddORgate2.h"
+#include "/CIE Projects/Circuit_Simulation/AddNOTgate1.h"
 
 
 ApplicationManager::ApplicationManager()
@@ -43,6 +44,10 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 
 		case ADD_OR_GATE_2:
 			pAct = new AddORgate2(this);
+			break;
+
+		case ADD_INV:
+			pAct = new AddNOTgate1(this);
 			break;
 
 		case ADD_CONNECTION:

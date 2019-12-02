@@ -1,5 +1,5 @@
-#include "/CIE Projects/CIE202 - Project Fall 2019 - student/Code Framework/AddSwitchgate.h"
-#include "/CIE Projects/CIE202 - Project Fall 2019 - student/Code Framework/ApplicationManager.h"
+#include "/CIE Projects/Circuit_Simulation/AddSwitchgate.h"
+#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
 
 AddSwitchgate::AddSwitchgate(ApplicationManager* pApp) :Action(pApp)
 {
@@ -16,7 +16,7 @@ void AddSwitchgate::Execute()
 	UI* pUI = pManager->GetUI();
 
 	//Print Action Message
-	pUI->PrintMsg("2-Input AND Gate: Click to add the gate");
+	pUI->PrintMsg("1-Input Switch Gate: Click to add the gate");
 
 	//Get Center point of the Gate
 	pUI->GetPointClicked(Cx, Cy);
@@ -33,7 +33,7 @@ void AddSwitchgate::Execute()
 	pGInfo->PointsList[0].y = Cy - gateHeight / 2;
 	pGInfo->PointsList[1].x = Cx + gateWidth / 2;
 	pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-	Switch* pA = new Switch(pGInfo, AND2_FANOUT);
+	Switch* pA = new Switch(pGInfo, Switch_FANOUT);
 	pManager->AddComponent(pA);
 }
 

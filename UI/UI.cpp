@@ -100,6 +100,7 @@ ActionType UI::GetUserAction() const
 			case ITM_AND2: return ADD_AND_GATE_2;
 			case ITM_NOR2: return ADD_NOR_GATE_2;
 			case ITM_OR2: return ADD_OR_GATE_2;
+			case ITM_NOT: return ADD_INV;
 			case ITM_EXIT: return EXIT;	
 			
 			default: return DSN_TOOL;	//A click on empty place in desgin toolbar
@@ -240,9 +241,9 @@ void UI::DrawNOR2(const GraphicsInfo &r_GfxInfo, bool selected) const
 {
 	string GateImage;
 	if (selected)	//use image in the highlighted case
-		GateImage = "Images\\Gates\\Gate_OR2_Hi.jpg";
+		GateImage = "Images\\Gates\\Gate_NOR2_Hi.jpg";
 	else
-		GateImage = "Images\\Gates\\Gate_OR2.jpg";
+		GateImage = "Images\\Gates\\Gate_NOR2.jpg";
 
 	//Draw NOR Gate at Gfx_Info (2nd corner)
 	//Set the Image Width & Height by NOR Image Parameter in UI_Info
@@ -256,6 +257,20 @@ void UI::DrawOR2(const GraphicsInfo &r_GfxInfo, bool selected) const
 		GateImage = "Images\\Gates\\Gate_OR2_Hi.jpg";
 	else
 		GateImage = "Images\\Gates\\Gate_OR2.jpg";
+
+	//Draw OR Gate at Gfx_Info (2nd corner)
+	//Set the Image Width & Height by OR Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+
+}
+
+void UI::DrawNOT(const GraphicsInfo& r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_AND2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_AND2.jpg";
 
 	//Draw OR Gate at Gfx_Info (2nd corner)
 	//Set the Image Width & Height by OR Image Parameter in UI_Info

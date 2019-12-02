@@ -1,3 +1,5 @@
-﻿  UI.cpp
-NOR2.obj : error LNK2019: unresolved external symbol "public: void __thiscall UI::DrawNOR2(struct GraphicsInfo const &,bool)const " (?DrawNOR2@UI@@QBEXABUGraphicsInfo@@_N@Z) referenced in function "public: virtual void __thiscall NOR2::Draw(class UI *)" (?Draw@NOR2@@UAEXPAVUI@@@Z)
-D:\CIE Projects\CIE202 - Project Fall 2019 - student\Code Framework\Debug\LogicSim.exe : fatal error LNK1120: 1 unresolved externals
+﻿  AddNOTgate1.cpp
+  ApplicationManager.cpp
+  NOT.cpp
+  Generating Code...
+  LogicSim.vcxproj -> D:\CIE Projects\Circuit_Simulation\Debug\LogicSim.exe

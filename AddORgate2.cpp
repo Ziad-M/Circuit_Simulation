@@ -1,5 +1,5 @@
 #include "AddORgate2.h"
-#include "/CIE Projects/CIE202 - Project Fall 2019 - student/Code Framework/ApplicationManager.h"
+#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
 
 AddORgate2::AddORgate2(ApplicationManager* pApp) :Action(pApp)
 {
@@ -27,13 +27,13 @@ void AddORgate2::Execute()
 	int gateWidth = pUI->getGateWidth();
 	int gateHeight = pUI->getGateHeight();
 
-	GraphicsInfo* pGInfo = new GraphicsInfo(2); //Gfx info to be used to construct the NOR2 gate
+	GraphicsInfo* pGInfo = new GraphicsInfo(2); //Gfx info to be used to construct the OR2 gate
 
 	pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 	pGInfo->PointsList[0].y = Cy - gateHeight / 2;
 	pGInfo->PointsList[1].x = Cx + gateWidth / 2;
 	pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-	NOR2* pA = new NOR2(pGInfo, OR2_FANOUT);
+	OR2* pA = new OR2(pGInfo, OR2_FANOUT);
 	pManager->AddComponent(pA);
 }
 

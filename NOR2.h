@@ -7,7 +7,7 @@
 */
 
 
-#include "/CIE Projects/CIE202 - Project Fall 2019 - student/Code Framework/Components/Gate.h"
+#include "/CIE Projects/Circuit_Simulation/Components/Gate.h"
 
 class NOR2 :public Gate
 {

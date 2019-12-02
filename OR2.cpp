@@ -14,7 +14,7 @@ void OR2::Operate()
 
 
 // Function Draw
-// Draws 2-input NOR2 gate
+// Draws 2-input OR2 gate
 void OR2::Draw(UI* pUI)
 {
 	//Call output class and pass gate drawing info to it.

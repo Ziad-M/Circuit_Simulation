@@ -41,8 +41,8 @@ class UI
 		ITM_AND2,		//AND gate item in menu
 		ITM_NOR2,
 		ITM_OR2,		//OR gate item in menu
-		ITM_NAND2,
 		ITM_NOT,
+		ITM_NAND2,
 		ITM_XOR2,
 		ITM_XNOR2,
 		ITM_Switch,
@@ -118,11 +118,12 @@ public:
 	void ClearStatusBar() const;		//Clears the status bar
 	void ClearDrawingArea() const;	//Clears the drawing area
 
-		
+	
 	// Draws 2-input AND gate
 	void DrawAND2(const GraphicsInfo &r_GfxInfo, bool selected = false) const;
 	void DrawNOR2(const GraphicsInfo &r_GfxInfo, bool selected = false) const;
 	void DrawOR2(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawNOT(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
 
 	///TODO: Make similar functions for drawing all other gates, switch, and LED, .. etc
 
