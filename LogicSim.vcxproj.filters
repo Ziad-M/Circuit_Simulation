@@ -136,6 +136,30 @@
     <ClInclude Include="AddNOTgate1.h">
       <Filter>Actions</Filter>
     </ClInclude>
+    <ClInclude Include="NAND2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AddNANDgate2.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="XOR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="XNOR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="LED.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AddLEDgate1.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="AddXNORgate2.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="AddXORgate2.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\AND2.cpp">
@@ -297,6 +321,30 @@
       <Filter>Components</Filter>
     </ClCompile>
     <ClCompile Include="AddNOTgate1.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="NAND2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNANDgate2.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="XOR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="XNOR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="LED.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AddLEDgate1.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="AddXNORgate2.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="AddXORgate2.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
   </ItemGroup>

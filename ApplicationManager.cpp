@@ -3,6 +3,11 @@
 #include "/CIE Projects/Circuit_Simulation/AddNORgate2.h"
 #include "/CIE Projects/Circuit_Simulation/AddORgate2.h"
 #include "/CIE Projects/Circuit_Simulation/AddNOTgate1.h"
+#include "/CIE Projects/Circuit_Simulation/AddNANDgate2.h"
+#include "/CIE Projects/Circuit_Simulation/AddLEDgate1.h"
+#include "/CIE Projects/Circuit_Simulation/AddXNORgate2.h"
+#include "/CIE Projects/Circuit_Simulation/AddXORgate2.h"
+#include "/CIE Projects/Circuit_Simulation/AddSwitchgate.h"
 
 
 ApplicationManager::ApplicationManager()
@@ -46,14 +51,35 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			pAct = new AddORgate2(this);
 			break;
 
+		case ADD_NAND_GATE_2:
+			pAct = new AddNANDgate2(this);
+			break;
+
 		case ADD_INV:
 			pAct = new AddNOTgate1(this);
+			break;
+
+		case ADD_LED:
+			pAct = new AddLEDgate1(this);
+			break;
+
+		case ADD_XNOR_GATE_2:
+			pAct = new AddXNORgate2(this);
+			break;
+
+		case ADD_Switch:
+			pAct = new AddSwitchgate(this);
+			break;
+
+		case ADD_XOR_GATE_2:
+			pAct = new AddXORgate2(this);
 			break;
 
 		case ADD_CONNECTION:
 			//TODO: Create AddConection Action here
 			break;
-	
+
+
 
 		case EXIT:
 			///TODO: create ExitAction here

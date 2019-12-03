@@ -1,7 +1,7 @@
 #pragma once
 
 /*
-  Class AND2
+  Class NOR2
   -----------
   represent the 2-input AND gate
 */

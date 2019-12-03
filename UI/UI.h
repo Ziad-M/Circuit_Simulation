@@ -124,6 +124,11 @@ public:
 	void DrawNOR2(const GraphicsInfo &r_GfxInfo, bool selected = false) const;
 	void DrawOR2(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
 	void DrawNOT(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawNAND2(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawLED(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawXNOR2(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawXOR2(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
+	void DrawSwitch(const GraphicsInfo& r_GfxInfo, bool selected = false) const;
 
 	///TODO: Make similar functions for drawing all other gates, switch, and LED, .. etc
 

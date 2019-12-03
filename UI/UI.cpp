@@ -98,9 +98,14 @@ ActionType UI::GetUserAction() const
 			switch (ClickedItemOrder)
 			{
 			case ITM_AND2: return ADD_AND_GATE_2;
+			case ITM_NAND2: return ADD_NAND_GATE_2;
 			case ITM_NOR2: return ADD_NOR_GATE_2;
 			case ITM_OR2: return ADD_OR_GATE_2;
 			case ITM_NOT: return ADD_INV;
+			case ITM_LED: return ADD_LED;
+			case ITM_XOR2: return ADD_XOR_GATE_2;
+			case ITM_XNOR2: return ADD_XNOR_GATE_2;
+			case ITM_Switch: return ADD_Switch;
 			case ITM_EXIT: return EXIT;	
 			
 			default: return DSN_TOOL;	//A click on empty place in desgin toolbar
@@ -268,15 +273,84 @@ void UI::DrawNOT(const GraphicsInfo& r_GfxInfo, bool selected) const
 {
 	string GateImage;
 	if (selected)	//use image in the highlighted case
-		GateImage = "Images\\Gates\\Gate_AND2_Hi.jpg";
+		GateImage = "Images\\Gates\\Gate_NOT1_Hi.jpg";
 	else
-		GateImage = "Images\\Gates\\Gate_AND2.jpg";
+		GateImage = "Images\\Gates\\Gate_NOT1.jpg";
 
 	//Draw OR Gate at Gfx_Info (2nd corner)
 	//Set the Image Width & Height by OR Image Parameter in UI_Info
 	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
 
 }
+
+void UI::DrawNAND2(const GraphicsInfo& r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_NAND2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_NAND2.jpg";
+
+	//Draw AND2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+}
+
+void UI::DrawLED(const GraphicsInfo& r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_NAND2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_NAND2.jpg";
+
+	//Draw AND2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+}
+
+
+void UI::DrawXNOR2(const GraphicsInfo& r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_XNOR2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_XNOR2.jpg";
+
+	//Draw AND2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+}
+
+
+void UI::DrawXOR2(const GraphicsInfo& r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_XOR2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_XOR2.jpg";
+
+	//Draw AND2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+}
+
+void UI::DrawSwitch(const GraphicsInfo& r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if (selected)	//use image in the highlighted case
+		GateImage = "Images\\Gates\\Gate_XOR2_Hi.jpg";
+	else
+		GateImage = "Images\\Gates\\Gate_XOR2.jpg";
+
+	//Draw AND2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.PointsList[0].x, r_GfxInfo.PointsList[0].y, GATE_Width, GATE_Height);
+}
+
+
 //TODO: Add similar functions to draw all components
 
 

@@ -20,7 +20,7 @@ void Switch::Operate()
 void Switch::Draw(UI* pUI)
 {
 	//Call output class and pass gate drawing info to it.
-	pUI->DrawAND2(*m_pGfxInfo);
+	pUI->DrawSwitch(*m_pGfxInfo);
 }
 
 //returns status of outputpin
