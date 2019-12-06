@@ -113,7 +113,7 @@ ActionType UI::GetUserAction() const
 		}
 	
 		//[2] User clicks on the drawing area
-		if ( y >= ToolBarHeight && y < height - StatusBarHeight)
+		if (y >= ToolBarHeight && y < height - StatusBarHeight)
 		{
 			return SELECT;	//user want to select/unselect a statement in the flowchart
 		}

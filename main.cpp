@@ -13,7 +13,7 @@ int main()
 	ApplicationManager AppManager;
 
 	do
-	{		
+	{
 		//Read user action
 		ActType = AppManager.GetUserAction();
 
@@ -25,7 +25,16 @@ int main()
 	
 
 	}while(ActType != EXIT);
-		
+	
+
+
+	//UI().ClearDrawingArea();
+
+	//AppManager.GetUI.ClearDrawingArea();
+	//AppManager.GetUI.ClearStatusBar();
+
+
+
 	return 0;
 }
 

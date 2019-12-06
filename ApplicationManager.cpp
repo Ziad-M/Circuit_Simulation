@@ -23,13 +23,13 @@ ApplicationManager::ApplicationManager()
 ////////////////////////////////////////////////////////////////////
 void ApplicationManager::AddComponent(Component* pComp)
 {
-	CompList[CompCount++] = pComp;		
+	CompList[CompCount++] = pComp;
 }
 ////////////////////////////////////////////////////////////////////
 
 ActionType ApplicationManager::GetUserAction()
 {
-	//Call input to get what action is reuired from the user
+	//Call input to get what action is required from the user
 	return pUI->GetUserAction(); 	
 }
 ////////////////////////////////////////////////////////////////////
@@ -91,13 +91,21 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		delete pAct;
 		pAct = NULL;
 	}
+	//Select12()
+	//{
+	//	if (CompList[CompCount] == )
+	//}
 }
 ////////////////////////////////////////////////////////////////////
 
 void ApplicationManager::UpdateInterface()
 {
-		for(int i=0; i<CompCount; i++)
-			CompList[i]->Draw(pUI);
+	for (int i = 0; i < CompCount; i++)
+	{
+		CompList[i]->Draw(pUI);
+
+
+	}
 
 }
 
