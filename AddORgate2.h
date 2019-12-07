@@ -1,8 +1,8 @@
 #pragma once
 
 
-#include "/CIE Projects/Circuit_Simulation/Actions/Action.h"
-#include "/CIE Projects/Circuit_Simulation/OR2.h"
+#include "/Circuit_Simulation-master/Actions/Action.h"
+#include "/Circuit_Simulation-master/OR2.h"
 
 class AddORgate2 : public Action
 {

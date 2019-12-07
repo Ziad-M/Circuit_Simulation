@@ -27,8 +27,7 @@ public:
 
 	//Reads the required action from the user and returns the corresponding action type
 	ActionType GetUserAction();
-
-
+	
 	//Creates an action and executes it
 	void ExecuteAction(ActionType);
 	
@@ -40,7 +39,6 @@ public:
 
 	//Adds a new component to the list of components
 	void AddComponent(Component* pComp);
-
 
 	//destructor
 	~ApplicationManager();

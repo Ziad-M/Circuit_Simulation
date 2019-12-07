@@ -7,7 +7,7 @@
 */
 
 
-#include "/CIE Projects/Circuit_Simulation/Components/Gate.h"
+#include "/Circuit_Simulation-master/Components/Gate.h"
 
 class OR2 :public Gate
 {

@@ -160,6 +160,9 @@
     <ClInclude Include="AddXORgate2.h">
       <Filter>Actions</Filter>
     </ClInclude>
+    <ClInclude Include="ADDCONNECTION.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\AND2.cpp">
@@ -345,6 +348,9 @@
       <Filter>Actions</Filter>
     </ClCompile>
     <ClCompile Include="AddXORgate2.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ADDCONNECTION.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
   </ItemGroup>

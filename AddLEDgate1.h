@@ -1,7 +1,7 @@
 #pragma once
 
-#include "/CIE Projects/Circuit_Simulation/Actions/Action.h"
-#include "../Circuit_Simulation/LED.h"
+#include "/Circuit_Simulation-master/Actions/Action.h"
+#include "/Circuit_Simulation-master/LED.h"
 
 class AddLEDgate1 : public Action
 {

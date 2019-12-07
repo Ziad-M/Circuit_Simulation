@@ -103,6 +103,7 @@
     <ClInclude Include="Components\OutputPin.h" />
     <ClInclude Include="Components\Pin.h" />
     <ClInclude Include="Defs.H" />
+    <ClInclude Include="ADDCONNECTION.h" />
     <ClInclude Include="LED.h" />
     <ClInclude Include="NAND2.h" />
     <ClInclude Include="NOR2.h" />
@@ -175,6 +176,7 @@
     <ClCompile Include="NOR2.cpp" />
     <ClCompile Include="NOT.cpp" />
     <ClCompile Include="OR2.cpp" />
+    <ClCompile Include="ADDCONNECTION.cpp" />
     <ClCompile Include="SWITCH.cpp" />
     <ClCompile Include="UI\UI.cpp" />
     <ClCompile Include="XNOR2.cpp" />

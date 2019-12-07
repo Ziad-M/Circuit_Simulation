@@ -1,13 +1,14 @@
 #include "ApplicationManager.h"
 #include "Actions\AddANDgate2.h"
-#include "/CIE Projects/Circuit_Simulation/AddNORgate2.h"
-#include "/CIE Projects/Circuit_Simulation/AddORgate2.h"
-#include "/CIE Projects/Circuit_Simulation/AddNOTgate1.h"
-#include "/CIE Projects/Circuit_Simulation/AddNANDgate2.h"
-#include "/CIE Projects/Circuit_Simulation/AddLEDgate1.h"
-#include "/CIE Projects/Circuit_Simulation/AddXNORgate2.h"
-#include "/CIE Projects/Circuit_Simulation/AddXORgate2.h"
-#include "/CIE Projects/Circuit_Simulation/AddSwitchgate.h"
+#include "/Circuit_Simulation-master/AddNORgate2.h"
+#include "/Circuit_Simulation-master/AddORgate2.h"
+#include "/Circuit_Simulation-master/AddNOTgate1.h"
+#include "/Circuit_Simulation-master/AddNANDgate2.h"
+#include "/Circuit_Simulation-master/AddLEDgate1.h"
+#include "/Circuit_Simulation-master/AddXNORgate2.h"
+#include "/Circuit_Simulation-master/AddXORgate2.h"
+#include "/Circuit_Simulation-master/AddSwitchgate.h"
+#include "/Circuit_Simulation-master/ADDCONNECTION.h"
 
 
 ApplicationManager::ApplicationManager()
@@ -23,13 +24,13 @@ ApplicationManager::ApplicationManager()
 ////////////////////////////////////////////////////////////////////
 void ApplicationManager::AddComponent(Component* pComp)
 {
-	CompList[CompCount++] = pComp;
+	CompList[CompCount++] = pComp;		
 }
 ////////////////////////////////////////////////////////////////////
 
 ActionType ApplicationManager::GetUserAction()
 {
-	//Call input to get what action is required from the user
+	//Call input to get what action is reuired from the user
 	return pUI->GetUserAction(); 	
 }
 ////////////////////////////////////////////////////////////////////
@@ -76,6 +77,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			break;
 
 		case ADD_CONNECTION:
+			pAct = new ADDCONNECTION(this);
 			//TODO: Create AddConection Action here
 			break;
 
@@ -91,21 +93,13 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		delete pAct;
 		pAct = NULL;
 	}
-	//Select12()
-	//{
-	//	if (CompList[CompCount] == )
-	//}
 }
 ////////////////////////////////////////////////////////////////////
 
 void ApplicationManager::UpdateInterface()
 {
-	for (int i = 0; i < CompCount; i++)
-	{
-		CompList[i]->Draw(pUI);
-
-
-	}
+		for(int i=0; i<CompCount; i++)
+			CompList[i]->Draw(pUI);
 
 }
 

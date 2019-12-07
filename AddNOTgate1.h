@@ -1,8 +1,8 @@
 #pragma once
 
 
-#include "/CIE Projects/Circuit_Simulation/Actions/Action.h"
-#include "/CIE Projects/Circuit_Simulation/NOT.h"
+#include "/Circuit_Simulation-master/Actions/Action.h"
+#include "/Circuit_Simulation-master/NOT.h"
 
 class AddNOTgate1 : public Action
 {

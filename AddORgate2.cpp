@@ -1,5 +1,5 @@
 #include "AddORgate2.h"
-#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
+#include "/Circuit_Simulation-master/ApplicationManager.h"
 
 AddORgate2::AddORgate2(ApplicationManager* pApp) :Action(pApp)
 {

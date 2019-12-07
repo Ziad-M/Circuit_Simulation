@@ -1,7 +1,7 @@
 #pragma once
 
-#include "/CIE Projects/Circuit_Simulation/Actions/Action.h"
-#include "/CIE Projects/Circuit_Simulation/XOR2.h"
+#include "/Circuit_Simulation-master/Actions/Action.h"
+#include "/Circuit_Simulation-master/XOR2.h"
 
 class AddXORgate2 : public Action
 {

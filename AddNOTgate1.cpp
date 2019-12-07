@@ -1,5 +1,5 @@
-#include "/CIE Projects/Circuit_Simulation/AddNOTgate1.h"
-#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
+#include "/Circuit_Simulation-master/AddNOTgate1.h"
+#include "/Circuit_Simulation-master/ApplicationManager.h"
 
 AddNOTgate1::AddNOTgate1(ApplicationManager* pApp) :Action(pApp)
 {

@@ -6,7 +6,7 @@
   represent the 2-input NAND gate
 */
 
-#include "/CIE Projects/Circuit_Simulation/Components/Gate.h"
+#include "/Circuit_Simulation-master/Components/Gate.h"
 
 class NAND2 :public Gate
 {

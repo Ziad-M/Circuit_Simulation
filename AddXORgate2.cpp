@@ -1,5 +1,5 @@
 #include "AddXORgate2.h"
-#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
+#include "/Circuit_Simulation-master/ApplicationManager.h"
 
 AddXORgate2::AddXORgate2(ApplicationManager* pApp) :Action(pApp)
 {
@@ -27,7 +27,7 @@ void AddXORgate2::Execute()
 	int gateWidth = pUI->getGateWidth();
 	int gateHeight = pUI->getGateHeight();
 
-	GraphicsInfo* pGInfo = new GraphicsInfo(2); //Gfx info to be used to construct the XOR2 gate
+	GraphicsInfo* pGInfo = new GraphicsInfo(2); //Gfx info to be used to construct the AND2 gate
 
 	pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 	pGInfo->PointsList[0].y = Cy - gateHeight / 2;

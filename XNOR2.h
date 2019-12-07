@@ -6,7 +6,7 @@
   represent the 2-input AND gate
 */
 
-#include "/CIE Projects/Circuit_Simulation/Components/Gate.h"
+#include "/Circuit_Simulation-master/Components/Gate.h"
 
 class XNOR2 :public Gate
 {

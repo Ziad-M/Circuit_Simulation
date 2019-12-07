@@ -1,6 +1,6 @@
 
-#include "/CIE Projects/Circuit_Simulation/Actions/Action.h"
-#include "/CIE Projects/Circuit_Simulation/NAND2.h"
+#include "/Circuit_Simulation-master/Actions/Action.h"
+#include "/Circuit_Simulation-master/NAND2.h"
 
 class AddNANDgate2 :	public Action
 {

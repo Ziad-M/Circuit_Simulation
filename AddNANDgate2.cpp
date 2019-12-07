@@ -1,5 +1,5 @@
 #include "AddNANDgate2.h"
-#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
+#include "/Circuit_Simulation-master/ApplicationManager.h"
 
 AddNANDgate2::AddNANDgate2(ApplicationManager* pApp) :Action(pApp)
 {

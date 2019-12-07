@@ -1,5 +1,5 @@
-#include "/CIE Projects/Circuit_Simulation/AddSwitchgate.h"
-#include "/CIE Projects/Circuit_Simulation/ApplicationManager.h"
+#include "AddSwitchgate.h"
+#include "/Circuit_Simulation-master/ApplicationManager.h"
 
 AddSwitchgate::AddSwitchgate(ApplicationManager* pApp) :Action(pApp)
 {
@@ -27,7 +27,7 @@ void AddSwitchgate::Execute()
 	int gateWidth = pUI->getGateWidth();
 	int gateHeight = pUI->getGateHeight();
 
-	GraphicsInfo* pGInfo = new GraphicsInfo(2); //Gfx info to be used to construct the Switch gate
+	GraphicsInfo* pGInfo = new GraphicsInfo(2); //Gfx info to be used to construct the AND2 gate
 
 	pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 	pGInfo->PointsList[0].y = Cy - gateHeight / 2;
