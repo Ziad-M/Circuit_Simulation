@@ -11,3 +11,7 @@ Component::Component()
 Component::~Component()
 {}
 
+/* Returns whether the component is deleted or not */
+bool Component::IsDeleted() const {
+	return mDeleted;
+}

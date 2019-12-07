@@ -11,6 +11,7 @@ private:
 	string m_Label;
 protected:
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
+	bool mDeleted;			// Whether this component is deleted or not, needed for UNDO & REDO actions
 public:
 	Component(GraphicsInfo *r_GfxInfo);
 	virtual void Operate() = 0;	//Calculates the output according to the inputs
@@ -22,6 +23,11 @@ public:
 
 	virtual void setInputPinStatus(int n, STATUS s)=0;	//set status of Inputpin # n, to be used by connection class.
 
+/* Returns whether the component is deleted or not */
+	bool IsDeleted() const;
+
+	/* Saves the states of the component */
+	virtual void Save(ofstream& file) = 0;
 	
 	Component();	
 	

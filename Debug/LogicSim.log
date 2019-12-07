@@ -1,2 +1,78 @@
-﻿  main.cpp
-  LogicSim.vcxproj -> D:\CIE Projects\Circuit_Simulation\Debug\LogicSim.exe
+﻿  AddANDgate2.cpp
+  AddLEDgate1.cpp
+  AddNANDgate2.cpp
+  AddNORgate2.cpp
+  AddNOTgate1.cpp
+  AddORgate2.cpp
+  AddSwitchgate.cpp
+  AddXNORgate2.cpp
+  AddXORgate2.cpp
+  ApplicationManager.cpp
+  CMUgraphics.cpp
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\CMUgraphics.cpp(751): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\CMUgraphics.cpp(1164): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\CMUgraphics.cpp(1171): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\CMUgraphics.cpp(1202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\CMUgraphics.cpp(1210): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\CMUgraphics.cpp(1357): warning C4018: '>': signed/unsigned mismatch
+  Gate.cpp
+  LED.cpp
+  NAND2.cpp
+  NOR2.cpp
+  NOT.cpp
+  OR2.cpp
+  SWITCH.cpp
+  XNOR2.cpp
+  XOR2.cpp
+  Generating Code...
+  Compiling...
+  UI.cpp
+  Generating Code...
+  jpegload.c
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\jpegload.c(23): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+  jcomapi.c
+  jcparam.c
+  jdapimin.c
+  jdapistd.c
+  jdatasrc.c
+  jdcoefct.c
+  jdcolor.c
+  jddctmgr.c
+  jdhuff.c
+  jdinput.c
+  jdmainct.c
+  jdmarker.c
+  jdmaster.c
+  jdmerge.c
+  jdphuff.c
+  jdpostct.c
+  jdsample.c
+  jdtrans.c
+  jerror.c
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\jpeg\jerror.c(169): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\jpeg\jerror.c(171): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+  Generating Code...
+  Compiling...
+  jidctflt.c
+  jidctfst.c
+  jidctint.c
+  jidctred.c
+  jmemmgr.c
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\jpeg\jmemmgr.c(1103): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdlib.h(1191): note: see declaration of 'getenv'
+D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\CMUgraphicsLib\jpeg\jmemmgr.c(1106): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+  jmemnobs.c
+  jquant1.c
+  jquant2.c
+  jutils.c
+  Generating Code...
+  LogicSim.vcxproj -> D:\Undergraduate Stuff\Zewail\Projects\Simulation\Circuit_Simulation\Debug\LogicSim.exe

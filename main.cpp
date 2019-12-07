@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <sstream>
 #include <cmath>
@@ -28,10 +27,10 @@ int main()
 	
 
 
-	//UI().ClearDrawingArea();
+	UI().ClearDrawingArea();
 
-	//AppManager.GetUI.ClearDrawingArea();
-	//AppManager.GetUI.ClearStatusBar();
+	//ApplicationManager.GetUI.ClearDrawingArea();
+	//ApplicationManager.GetUI.ClearStatusBar();
 
 
 
