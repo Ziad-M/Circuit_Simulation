@@ -1,16 +1,10 @@
-#pragma once
+#ifndef CONST_H
+#define CONST_H
 
 //This header file contains some defenitions to be used all over the application
-#define MAX_COMPONENTS	400	// Maximum number of components
-#define MAX_CONNECTIONS	20	// Maximum number of input pins that can be connected to any output pin
-#define GATES_FANOUT	5
-#define SWITCH_FANOUT	5
-#define LED_FANOUT		5
-
-class Component;	// Forward class declaration
 
 //All possible actions
-enum ActionType
+enum ActionType 
 {
 	ADD_Buff,			//Add 1-input Buffer gate
 	ADD_INV,			//Add 1-input Inverter gate
@@ -49,30 +43,6 @@ enum ActionType
 
 };
 
-/* Structure holding drawing parameters for components */
-struct GraphicsInfo {
-	int x1, y1;		// Upper left point
-	int x2, y2;		// Lower right point
-};
-/* Tool bar items */
-enum ToolBarItem {
-	ITEM_EDIT,
-	ITEM_DELETE,
-	ITEM_COPY,
-	ITEM_CUT,
-	ITEM_PASTE,
-	ITEM_UNDO,
-	ITEM_REDO,
-	ITEM_PLAY,
-	ITEM_PAUSE,
-	ITEM_TRUTHTABLE,
-	ITEM_SAVE,
-	ITEM_LOAD,
-	ITEM_EXIT,
-
-	TOOLS_COUNT,
-};
-
 //Possible Status for the pin
 enum STATUS
 {
@@ -104,6 +74,10 @@ enum FANOUT
 	XOR_FANOUT = 5,
 	CONNECTION_FANOUT=5,
 };
+
+
 #ifndef NULL
 #define NULL 0
+#endif
+
 #endif
