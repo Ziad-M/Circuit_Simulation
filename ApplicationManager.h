@@ -18,7 +18,7 @@
 class ApplicationManager
 {
 
-	enum { MaxCompCount = 200 };	//Max no of Components	
+	enum { MaxCompCount = 200 };	//Max no of Components
 
 private:
 	int CompCount;		//Actual number of Components
@@ -28,7 +28,7 @@ private:
 	Output* pOut;				// Pointer to the Output class
 	UI* pUI; //pointer to the UI
 
-public:	
+public:
 	ApplicationManager(); //constructor
 
 	// Sets the last copied/cut component
@@ -46,20 +46,19 @@ public:
 	//Reads the required action from the user and returns the corresponding action type
 	ActionType GetUserAction();
 
-
 	//Creates an action and executes it
 	void ExecuteAction(ActionType& acType);
-	
+
 	void UpdateInterface();	//Redraws all the drawing window
 
 	//Gets a pointer to UI Object
 	UI* GetUI();
-	
+
 
 	//Adds a new component to the list of components
 	void AddComponent(Component* pComp);
 
-	// Returns the number of the existing components 
+	// Returns the number of the existing components
 	int GetExistingComponentsCount() const;
 
 	// Counts and returns the number of selected components
@@ -68,25 +67,25 @@ public:
 	// Sets a selection value to all components
 	void SetSelectionOfComponents(bool s);
 
-	// Returns a vector of all selected components 
+	// Returns a vector of all selected components
 	vector<Component*> GetSelectedComponents();
 
-	// Returns a vector of all selected gates 
+	// Returns a vector of all selected gates
 	vector<Gate*> GetSelectedGates();
 
-	// Returns a vector of all connections 
+	// Returns a vector of all connections
 	vector<Connection*> GetConnections();
 
-	//Returns a vector of all switches 
+	//Returns a vector of all switches
 	vector<Switch*> GetSwitches();
 
-	// Returns a vector of all leds 
+	// Returns a vector of all leds
 	vector<LED*> GetLeds();
 
-	// Saves the current circuit 
+	// Saves the current circuit
 	void Save(ofstream& file);
 
-	// Loads the circuit from the file 
+	// Loads the circuit from the file
 	void Load(ifstream& file);
 
 	//destructor

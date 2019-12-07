@@ -116,9 +116,13 @@
     <ClInclude Include="Components\XNOR2.h" />
     <ClInclude Include="Components\XOR2.h" />
     <ClInclude Include="Defs.H" />
-    <ClInclude Include="UI\Dialog.h" />
-    <ClInclude Include="UI\Input.h" />
-    <ClInclude Include="UI\Output.h" />
+    <ClInclude Include="ADDCONNECTION.h" />
+    <ClInclude Include="LED.h" />
+    <ClInclude Include="NAND2.h" />
+    <ClInclude Include="NOR2.h" />
+    <ClInclude Include="NOT.h" />
+    <ClInclude Include="OR2.h" />
+    <ClInclude Include="SWITCH.h" />
     <ClInclude Include="UI\UI.h" />
   </ItemGroup>
   <ItemGroup>
@@ -191,9 +195,12 @@
     <ClCompile Include="Components\XNOR2.cpp" />
     <ClCompile Include="Components\XOR2.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="UI\Dialog.cpp" />
-    <ClCompile Include="UI\Input.cpp" />
-    <ClCompile Include="UI\Output.cpp" />
+    <ClCompile Include="NAND2.cpp" />
+    <ClCompile Include="NOR2.cpp" />
+    <ClCompile Include="NOT.cpp" />
+    <ClCompile Include="OR2.cpp" />
+    <ClCompile Include="ADDCONNECTION.cpp" />
+    <ClCompile Include="SWITCH.cpp" />
     <ClCompile Include="UI\UI.cpp" />
   </ItemGroup>
   <ItemGroup>

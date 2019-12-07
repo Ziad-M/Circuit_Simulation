@@ -32,7 +32,7 @@ ApplicationManager::ApplicationManager()
 void ApplicationManager::SetCopiedComp(Component* pComp) {
 	CopiedComp = pComp;
 }
-// Returns the last copied/cut component 
+// Returns the last copied/cut component
 Component* ApplicationManager::GetCopiedComp() const {
 	return CopiedComp;
 }
@@ -60,8 +60,8 @@ void ApplicationManager::AddComponent(Component* pComp)
 
 ActionType ApplicationManager::GetUserAction()
 {
-	//Call input to get what action is required from the user
-	return pUI->GetUserAction(); 	
+	//Call input to get what action is reuired from the user
+	return pUI->GetUserAction();
 }
 ////////////////////////////////////////////////////////////////////
 
@@ -125,21 +125,13 @@ void ApplicationManager::ExecuteAction(ActionType& ActType)
 		delete pAct;
 		pAct = NULL;
 	}
-	//Select12()
-	//{
-	//	if (CompList[CompCount] == )
-	//}
 }
 ////////////////////////////////////////////////////////////////////
 
 void ApplicationManager::UpdateInterface()
 {
-	for (int i = 0; i < CompCount; i++)
-	{
-		CompList[i]->Draw(pUI);
-
-
-	}
+		for(int i=0; i<CompCount; i++)
+			CompList[i]->Draw(pUI);
 
 }
 
@@ -156,7 +148,7 @@ ApplicationManager::~ApplicationManager()
 	for(int i=0; i<CompCount; i++)
 		delete CompList[i];
 	delete pUI;
-	
+
 }
 
 /* Saves the current circuit */

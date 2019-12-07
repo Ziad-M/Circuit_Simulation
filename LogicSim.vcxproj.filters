@@ -178,10 +178,9 @@
     <ClInclude Include="Actions\Exit.h">
       <Filter>Actions</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Dialog.h">
-      <Filter>UI</Filter>
+    <ClInclude Include="ADDCONNECTION.h">
+      <Filter>Actions</Filter>
     </ClInclude>
-    <ClInclude Include="Add-ons.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\AND2.cpp">
@@ -384,13 +383,9 @@
     <ClCompile Include="Actions\AddConnection.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\Exit.cpp">
+    <ClCompile Include="ADDCONNECTION.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
-    <ClCompile Include="UI\Dialog.cpp">
-      <Filter>UI</Filter>
-    </ClCompile>
-    <ClCompile Include="Add-ons.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

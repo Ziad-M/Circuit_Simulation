@@ -21,19 +21,9 @@ int main()
 
 		//Update the drawing window
 		AppManager.UpdateInterface();
-	
+
 
 	}while(ActType != EXIT);
-	
-
-
-	UI().ClearDrawingArea();
-
-	//ApplicationManager.GetUI.ClearDrawingArea();
-	//ApplicationManager.GetUI.ClearStatusBar();
-
-
 
 	return 0;
 }
-
